@@ -112,14 +112,14 @@ export default function Pokedex() {
                     />
                     <button
                         onClick={toSearch}
-                        className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-md transition duration-200 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                        className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-full shadow-md transition duration-200 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300 w-15 h-10 text-sm"
                     >
                         Search
                     </button>
                     {searchTerm && (
                         <button
                             onClick={handleResetSearch}
-                            className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full shadow-md transition duration-200 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-300"
+                            className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2  rounded-full shadow-md transition duration-200 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-300 w-15 h-10 text-sm"
                         >
                             Reset
                         </button>
@@ -150,10 +150,10 @@ export default function Pokedex() {
             {modal && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
                     {pokemon[card] ? (
-                        <div className="w-full max-w-2xl bg-white rounded-3xl shadow-2xl p-6 sm:p-8 flex flex-col items-center relative">
+                        <div className="w-full max-w-2xl bg-white rounded-3xl shadow-2xl p-6 sm:p-8 flex flex-col items-center relative overflow-y-scroll h-full">
                             <button
                                 onClick={() => toggleModal(0)}
-                                className="absolute top-4 left-4 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full shadow-md transition duration-200 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-300"
+                                className="absolute top-4 left-4 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full shadow-md transition duration-200 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-300 "
                             >
                                 &larr; Close
                             </button>
